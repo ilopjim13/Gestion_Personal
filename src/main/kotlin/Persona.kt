@@ -1,7 +1,7 @@
 /**
  * Clase Persona padre de la que derivan las demás
- * @param nombre :String el nombre de la persona
- * @param edad :Int edad de la persona
+ * @property nombre :String el nombre de la persona
+ * @property edad :Int edad de la persona
  */
 open class Persona(val nombre:String, var edad:Int) {
 
@@ -18,7 +18,5 @@ open class Persona(val nombre:String, var edad:Int) {
      * Imprime por pantallala información de la persona.
      * @return String con la información dela persona.
      */
-    override fun toString(): String {
-        return "Nombre: $nombre, Edad: $edad"
-    }
+    override fun toString() = "Nombre: $nombre, Edad: $edad"
 }
